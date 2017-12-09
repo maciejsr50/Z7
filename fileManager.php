@@ -1,10 +1,12 @@
-<?php 
+<?php
+// Tutaj są dodawane nowe pliki i wyswietlane znajdujace sie juz na serwerze
+
 session_start();
 include 'dao.php';
 $username = $_SESSION["login_user"];
 if(is_null($username)) {
     session_destroy();
-    header('Location: http://mboguszpas.pl/Z7/login.html');
+    header('Location: http://mboguszpas.pl/Z7/login.php');
 }
 
 $resultId = getUserId($username);
@@ -17,6 +19,7 @@ $faultTimestamp = $rowFault[0];
 if (is_null($faultTimestamp))
     $faultTimestamp = "Brak";
 ?>
+<meta charset="UTF-8" http-equiv="refresh" content="45">
 <link rel="stylesheet" href="style.css">
 <body>
 
