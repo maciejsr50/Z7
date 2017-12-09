@@ -1,0 +1,90 @@
+ /* Full-width input fields */
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.loginbtn {
+    padding: 14px 20px;
+    background-color: #408080;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.loginbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.logoutbtn {
+	padding: 10px;
+    float: center;
+    width: 60%;
+    background-color: #448686;
+}
+
+.filebtn,.choosebtn {
+	float: center;
+    width: 60%;
+    margin: 5px;
+    padding: 10px;
+    background-color: #4bb6de;
+}
+
+.faultLogin {
+	margin-top: 15px;
+    text-align: center;
+}
+
+.wrapper {
+	margin-top: 40px;
+    text-align: center;
+}
+
+.addfile{
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+.actionButtons {
+	padding: 16px;	
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .loginbtn, .signupbtn {
+        width: 100%;
+    }
+} 
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Bogusz</title>
+</head>
+<h1 align="center">Rejestracja nowego użytkownika</h1>
+<hr>
+<body>
+ <form method="post" action="registerAction.php">
+  <div class="container">
+    
+     <label><b>Nazwa użytkownika</b></label>
+    <input type="text" placeholder="Nazwa użytkownika" name="username" required>
+
+    <label><b>Hasło</b></label>
+    <input type="password" placeholder="Podaj hasło" name="psw" required>
+
+    <label><b>Powtórz hasło</b></label>
+    <input type="password" placeholder="Powtórz hasło" name="psw-repeat" required>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Zarejestruj</button>
+      <button type="button"  class="loginbtn" onclick="document.location.href='login.php'">Zaloguj</button>
+    </div>
+  </div>
+</form> 
+</body>
+</html>
